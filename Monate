@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Musterlösung_Switch {
+    public static void run(String month) {
+
+        switch (month){
+            case "Januar":
+            case "März":
+            case "Mai":
+            case "Juli":
+            case "August":
+            case "Oktober":
+            case "Dezember":
+                System.out.println("31");
+                break;
+            case "Februar":
+                System.out.println("28");
+                break;
+            case "April":
+            case "Juni":
+            case "September":
+            case "November":
+                System.out.println("30");
+                break;
+        }
+
+    }
+    public static void main(String[] args){
+        Scanner input = new Scanner (System.in);
+        System.out.println("Bitte gebe einen Monat ein:");
+        run(input.next());
+
+    }
+}
